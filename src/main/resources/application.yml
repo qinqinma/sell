@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.106/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  servlet:
+    context-path: /sell
+
+wechat:
+  #公众账号，授权
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret: 58859b305d5728d8e55e04e2201261ed
+  #开发平台，卖家扫码登陆用
+  openAppId:
+  openAppSecret:
+  #支付/商户号
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  #发起支付不需要证书，退款需要
+  keyPath: D:/2/ideaProject/h5.p12
+  notifyUrl: http://mqq888.natapp1.cc/sell/pay/notify
+
+  templateId:
+  orderStatus:
+
+projectUrl:
+  wechatMpAuthorize: http://mqq888.natapp1.cc
+  wechatOpenAuthorize: http://mqq888.natapp1.cc
+  sell: http://mqq888.natapp1.cc
